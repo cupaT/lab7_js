@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ревенко Данила</title>
+    <script src="task6.js" defer></script>
 </head>
 <body>
-$END$
+<h1>Введите начисленную зарплату за следующие месяцы</h1>
+<form id="salaryForm">
+    <label>Январь: <input type="number" id="january" value="300"></label><br>
+    <label>Февраль: <input type="number" id="february" value="200"></label><br>
+    <label>Март: <input type="number" id="march" value="500"></label><br>
+    <label>Апрель: <input type="number" id="april" value="250"></label><br>
+    <label>Май: <input type="number" id="may" value="350"></label><br>
+    <label>Июнь: <input type="number" id="june" value="500"></label><br>
+    <label>Средняя зарплата: <input type="text" id="averageSalary" readonly></label><br><br>
+    <button type="button" id="calculateButton">Вычислить</button>
+    <button type="reset">Обновить</button>
+</form>
 </body>
 </html>

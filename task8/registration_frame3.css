@@ -1,0 +1,141 @@
+#frame_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 50%;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+#frame_3 h2 {
+    margin-bottom: 25px;
+    font-size: 26px;
+    color: #333;
+    text-align: left;
+    width: 100%;
+    font-weight: bold;
+}
+
+#frame_3 label {
+    margin-bottom: 8px;
+    font-size: 16px;
+    color: #555;
+    text-align: left;
+    width: 100%;
+    font-weight: 500;
+}
+
+#frame_3 input {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#frame_3 input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+.card-number-inputs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.card-number-inputs input {
+    width: 70px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-number-inputs input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+/* Новая строка для Месяц/Год и CVV */
+.card-expiry-cvv {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.card-expiry-cvv input {
+    width: 48%; /* Равномерное распределение между месяц/год и CVV */
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-expiry-cvv input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+    outline: none;
+}
+
+#frame_3 .buttons {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#frame_3 button {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#frame_3 #back-button {
+    background-color: #f44336;
+    color: white;
+}
+
+#frame_3 #back-button:hover {
+    background-color: #d32f2f;
+    transform: scale(1.05);
+}
+
+#frame_3 #finish-button:disabled {
+    background-color: #e0e0e0;
+    color: #a0a0a0;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.7;
+}
+
+#frame_3 #finish-button {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+}
+
+#frame_3 #finish-button:hover:enabled {
+    background-color: #45a049;
+    transform: scale(1.05);
+}

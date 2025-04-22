@@ -6,12 +6,12 @@
     <title>Task 5</title>
 </head>
 <body>
-    <input type="text" id="textInput" placeholder="Введите текст">
+<input type="text" id="textInput" placeholder="Введите текст">
 
-    <script>
-        document.getElementById('textInput').addEventListener('input', () => {
-            alert('Текст был изменен!!!');
-        });
-    </script>
+<script>
+    document.getElementById('textInput').addEventListener('input', () => {
+        window.open('', '_blank', 'width=300,height=200').document.write('<p>Текст был изменен!!!</p>');
+    });
+</script>
 </body>
 </html>

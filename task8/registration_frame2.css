@@ -1,0 +1,95 @@
+#frame_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание элементов по левому краю */
+    justify-content: center;
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#frame_2 h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: left; /* Текст заголовка по левому краю */
+    width: 100%; /* Чтобы занимал всю ширину */
+}
+
+#frame_2 .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Выравнивание содержимого по левому краю */
+    margin-bottom: 20px;
+    width: 100%; /* Занимает всю ширину родителя */
+}
+
+#frame_2 label {
+    margin-bottom: 10px;
+    font-size: 16px;
+    text-align: left; /* Текст метки по левому краю */
+    width: 100%; /* Чтобы занимал всю ширину */
+}
+
+#frame_2 input {
+    width: 90%;
+    max-width: 300px;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+#frame_2 .buttons {
+    display: flex;
+    justify-content: flex-start; /* Кнопки выровнены по левому краю */
+    gap: 10px;
+    width: 100%; /* Занимает всю ширину */
+}
+
+#frame_2 button {
+    padding: 8px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#frame_2 #back-button {
+    background-color: #f44336;
+    color: white;
+}
+
+#frame_2 #send-code-button,
+#frame_2 #verify-code-button {
+    background-color: #2196f3;
+    color: white;
+}
+#frame_2 button:disabled {
+    background-color: #e0e0e0;
+    color: #a0a0a0;
+    cursor: not-allowed;
+    box-shadow: none;
+    opacity: 0.7;
+}
+#frame_2 #next-step-button {
+    background-color: #4caf50;
+    color: white;
+}
+
+#frame_2 #verification-code-section {
+    display: none;
+    margin-top: 15px;
+    text-align: left; /* Текст внутри по левому краю */
+    width: 100%; /* Занимает всю ширину родителя */
+}
+
+#frame_2 #verification-code-section input {
+    width: 80%;
+    max-width: 150px;
+    text-align: left; /* Текст внутри поля по левому краю */
+}
