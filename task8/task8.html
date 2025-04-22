@@ -36,7 +36,6 @@
     </div>
 </section>
 
-<!-- Основной контент -->
 <main id="main-content" style="display: none;">
     <!-- Шаг 1: Фрейм для персональных данных -->
     <section id="frame_1" style="display: none;">
@@ -70,19 +69,16 @@
     <section id="frame_2" style="display: none;">
         <h2>Подтверждение номера телефона</h2>
         <form id="phone-verification-form">
-            <!-- Ввод номера телефона -->
             <label for="phone-number">Номер телефона:</label>
-            <input type="tel" id="phone-number" placeholder="+79991234567" required>
+            <input type="tel" id="phone-number" placeholder="+7 (999) 123-45-67" required>
             <button type="button" id="send-code-button" disabled>Отправить</button>
 
-            <!-- Участок для кода подтверждения -->
             <div id="verification-code-section" style="display: none;">
                 <label for="verification-code">Код подтверждения:</label>
                 <input type="text" id="verification-code" maxlength="4" placeholder="1234">
                 <button type="button" id="verify-code-button" disabled>Проверить</button>
             </div>
 
-            <!-- Кнопки управления -->
             <div class="buttons">
                 <button type="button" id="back-button-frame2">Назад</button>
                 <button type="button" id="next-step-button" disabled>Далее</button>
@@ -94,7 +90,6 @@
     <section id="frame_3" style="display: none;">
         <h2>Метод оплаты</h2>
         <form id="payment-form">
-            <!-- Первая строка: Номер карты -->
             <label>Номер карты:</label>
             <div class="card-number-inputs">
                 <input type="text" id="card-part-1" maxlength="4" pattern="\d{4}" required>
@@ -103,13 +98,11 @@
                 <input type="text" id="card-part-4" maxlength="4" pattern="\d{4}" required>
             </div>
 
-            <!-- Вторая строка: Месяц/Год и CVV -->
             <div class="card-expiry-cvv">
                 <input type="text" id="card-expiry" placeholder="MM/YY" maxlength="5" pattern="\d{2}/\d{2}" required>
                 <input type="text" id="card-cvv" placeholder="CVV" maxlength="3" pattern="\d{3}" required>
             </div>
 
-            <!-- Кнопки управления -->
             <div class="buttons">
                 <button id="back-button" type="button">Назад</button>
                 <button id="finish-button" type="submit" disabled>Завершить</button>

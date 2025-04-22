@@ -1,7 +1,7 @@
 #frame_2 {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Выравнивание элементов по левому краю */
+    align-items: flex-start;
     justify-content: center;
     width: 50%;
     margin: 50px auto;
@@ -15,23 +15,23 @@
 #frame_2 h2 {
     margin-bottom: 20px;
     font-size: 24px;
-    text-align: left; /* Текст заголовка по левому краю */
-    width: 100%; /* Чтобы занимал всю ширину */
+    text-align: left;
+    width: 100%;
 }
 
 #frame_2 .input-container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Выравнивание содержимого по левому краю */
+    align-items: flex-start;
     margin-bottom: 20px;
-    width: 100%; /* Занимает всю ширину родителя */
+    width: 100%;
 }
 
 #frame_2 label {
     margin-bottom: 10px;
     font-size: 16px;
-    text-align: left; /* Текст метки по левому краю */
-    width: 100%; /* Чтобы занимал всю ширину */
+    text-align: left;
+    width: 100%;
 }
 
 #frame_2 input {
@@ -46,9 +46,9 @@
 
 #frame_2 .buttons {
     display: flex;
-    justify-content: flex-start; /* Кнопки выровнены по левому краю */
+    justify-content: flex-start;
     gap: 10px;
-    width: 100%; /* Занимает всю ширину */
+    width: 100%;
 }
 
 #frame_2 button {
@@ -84,12 +84,12 @@
 #frame_2 #verification-code-section {
     display: none;
     margin-top: 15px;
-    text-align: left; /* Текст внутри по левому краю */
-    width: 100%; /* Занимает всю ширину родителя */
+    text-align: left;
+    width: 100%;
 }
 
 #frame_2 #verification-code-section input {
     width: 80%;
     max-width: 150px;
-    text-align: left; /* Текст внутри поля по левому краю */
+    text-align: left;
 }
